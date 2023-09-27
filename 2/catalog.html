@@ -4,6 +4,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог Интернет-магазина мороженого "Глейси"</title>
     <base href="https://htmlacademy-htmlcss.github.io/2209519-gllacy-1/2/">
 </head>
@@ -26,13 +27,13 @@
 
             <!-- Логотип Шапки -->
 
-            <a class="logo" href="#">
+            <a class="logo" href="index.html">
               <img src="#" width="137" height="56" alt="Логотип интернет-магазина мороженого Глейси.">
             </a>
 
             <!-- Навигация по сайту -->
 
-            <ul class="nav-menu">
+            <ul class="nav-menu list-reset">
 
               <li class="nav-item dropdown">
 
@@ -57,7 +58,7 @@
 
             <a class="nav-phone" href="tel:+78005558628">+7 800 555-86-28</a>
 
-            <ul class="nav-user user-menu">
+            <ul class="nav-user user-menu list-reset">
 
               <li class="user-item user-item-search dropdown">
 
@@ -147,8 +148,9 @@
               <fieldset class="filter-fieldset filter-fieldset-select">
                 <h3 class="filter-form-legend">Сортировка:</h3>
 
-                <select class="filter-select" aria-label="Сортировка">
-                  <option value="popular" selected>Популярности</option>
+                <select class="filter-select" aria-label="Сортировка" name="sort">
+                  <option value="popular" selected>По популярности</option>
+                  <option value="price">По цене</option>
                 </select>
 
               </fieldset>
@@ -158,7 +160,7 @@
               <fieldset class="filter-fieldset filter-fieldset-price">
 
                 <div class="range-container-inputs">
-                  <h3 class="filter-form-legend">Цена: 100 ₽ – 500 ₽</h3>
+                  <h3 class="filter-form-legend">Цена:&nbsp;</h3>
 
                   <label class="filter-label" for="range-min">
                     <input class="range-input range-input-min" id="range-min" type="number" value="100"
@@ -294,9 +296,8 @@
         <!-- Карточки товаров Каталога -->
 
         <section class="catalog catalog-page">
-
+          <h2 class="visually-hidden">Каталог мороженого.</h2>
           <div class="catalog-container container">
-            <h2 class="catalog-title title">Попробуйте самые популярные вкусы <br>нашего мороженого</h2>
 
             <ul class="catalog-list list-reset">
 
@@ -748,7 +749,7 @@
 
           <h3 class="visually-hidden">Социальные сети</h3>
 
-          <ul class="social-list page-footer-social">
+          <ul class="social-list page-footer-social list-reset">
 
             <li class="social-item">
 
@@ -779,7 +780,7 @@
 
           <!-- Меню Навигации Подвала -->
 
-          <ul class="footer-navigation-menu">
+          <ul class="footer-navigation-menu list-reset">
 
             <li class="footer-navigation-item">
               <a class="footer-navigation-link footer-navigation-link-favorites" href="#">Для поставщиков</a>
