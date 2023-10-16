@@ -181,6 +181,18 @@ img {
 
 /* Слайдер */
 
+.slide {
+  display: flex;
+}
+
+.slide-active .slide-text {
+  width: 429px;
+}
+
+.slide-text {
+  width: 470px;
+}
+
 .slide-caption {
   font-weight: 900;
   font-size: 36px;
@@ -190,6 +202,10 @@ img {
 .slide-description {
   font-size: 18px;
   line-height: 24px;
+}
+
+.slider-bullets {
+  display: flex;
 }
 
 /* Заказывайте мороженое и получайте подарки! */
