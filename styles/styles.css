@@ -341,6 +341,21 @@ img {
 
 /* Ссылка на блог */
 
+.promo-container {
+  display: flex;
+}
+
+.blog {
+  width: 570px;
+  margin-right: 30px;
+
+  background-color: #ff7799;
+  background-image: url("../images/backgrounds/promo/blog-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+
 .blog-title {
   margin: 0;
 
@@ -351,6 +366,9 @@ img {
 }
 
 .blog-link {
+  display: block;
+  width: 303px;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -358,17 +376,10 @@ img {
   text-decoration: none;
 }
 
-.blog {
-  background-color: #ff7799;
-  background-image: url("../images/backgrounds/promo/blog-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
-}
-
 /* Подписка на рассылку */
 
 .newsletter {
+  width: 570px;
   padding: 6px;
 
   background-color: #ff7799;
