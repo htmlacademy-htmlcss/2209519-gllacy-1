@@ -68,11 +68,6 @@ img {
   object-position: center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 .list-reset {
   margin: 0;
   padding: 0;
@@ -124,8 +119,20 @@ a {
 
 /* Навигация пользователя */
 
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .nav-phone {
   font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.user-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .text-login {
@@ -182,6 +189,11 @@ a {
 
 .catalog-wrapper {
   background-color: #fcfcfc;
+}
+
+.catalog-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .catalog-title {
@@ -258,6 +270,8 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .blog {
@@ -372,6 +386,8 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .contacts-tip {
@@ -392,6 +408,8 @@ a {
 
 .footer-navigation-link {
   font-size: 14px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .page-footer-copyright-info {
@@ -399,11 +417,18 @@ a {
   line-height: 16px;
 }
 
+.page-footer-copyright-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Хлебные крошки Каталога */
 
 .breadcrumbs-link {
   font-weight: 700;
   font-size: 14px;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Фильтр товаров Каталога */
@@ -427,4 +452,9 @@ a {
 
 .filter-form-button {
   font-size: 14px;
+}
+
+.pagination-link {
+  color: inherit;
+  text-decoration: none;
 }
