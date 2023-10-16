@@ -253,6 +253,24 @@ img {
 
 /* Попробуйте самые популярные вкусы нашего мороженого */
 
+.catalog-title-common {
+  text-align: center;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .catalog-wrapper {
   background-color: #fcfcfc;
 }
