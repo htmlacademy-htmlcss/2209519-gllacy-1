@@ -210,7 +210,17 @@ img {
 
 /* Заказывайте мороженое и получайте подарки! */
 
+.presents-title {
+  text-align: center;
+}
+
+.presents-list {
+  display: flex;
+}
+
 .presents-item {
+  width: 570px;
+
   background-color: #ff7799;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -232,7 +242,13 @@ img {
 }
 
 .presents-description {
+  width: 317px;
+
   line-height: 22px;
+}
+
+.presents-item-raspberry {
+  margin-right: 30px;
 }
 
 /* Попробуйте самые популярные вкусы нашего мороженого */
