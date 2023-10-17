@@ -64,6 +64,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 
   object-fit: cover;
@@ -125,21 +126,31 @@ img {
   display: flex;
   width: 1170px;
   margin: 0 auto;
+  padding: 24px 0;
 }
 
 /* Навигация по сайту */
 
 .logo {
   display: block;
-  margin: 0 auto;
+  margin-right: 16px;
 }
 
 .nav-menu {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 575px;
+  margin-right: auto;
+}
+
+.nav-item {
+  padding: 8px 16px;
 }
 
 .nav-link {
+  display: block;
+
   color: inherit;
   text-decoration: none;
 }
@@ -147,6 +158,11 @@ img {
 /* Навигация пользователя */
 
 .nav-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 16px;
+
   font-weight: 700;
   color: inherit;
   text-decoration: none;
@@ -154,8 +170,17 @@ img {
 
 .nav-user {
   display: flex;
+  align-items: center;
   max-width: 431px;
-  margin-left: auto;
+  margin: 0;
+}
+
+.user-item {
+  margin-right: 16px;
+}
+
+.user-item:last-child {
+  margin-right: 0;
 }
 
 .user-link {
@@ -180,6 +205,10 @@ img {
 }
 
 /* Слайдер */
+
+.slider {
+  margin-bottom: 80px;
+}
 
 .slide {
   display: flex;
@@ -210,7 +239,13 @@ img {
 
 /* Заказывайте мороженое и получайте подарки! */
 
+.presents {
+  margin-bottom: 81px;
+}
+
 .presents-title {
+  margin-bottom: 55px;
+
   text-align: center;
 }
 
@@ -220,6 +255,7 @@ img {
 
 .presents-item {
   width: 570px;
+  padding: 36px;
 
   background-color: #ff7799;
   background-repeat: no-repeat;
@@ -236,6 +272,9 @@ img {
 }
 
 .presents-subtitle {
+  margin: 0;
+  margin-bottom: 28px;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -243,6 +282,8 @@ img {
 
 .presents-description {
   width: 317px;
+  margin: 0;
+  margin-bottom: 28px;
 
   line-height: 22px;
 }
@@ -253,7 +294,13 @@ img {
 
 /* Попробуйте самые популярные вкусы нашего мороженого */
 
+.catalog {
+  margin-bottom: 80px;
+}
+
 .catalog-title-common {
+  margin-bottom: 56px;
+
   text-align: center;
 }
 
@@ -299,6 +346,10 @@ img {
 
 /* О компании */
 
+.about {
+  margin-bottom: 80px;
+}
+
 .about-container {
   padding: 24px;
 
@@ -309,10 +360,14 @@ img {
 }
 
 .about-wrapper {
+  padding: 56px 40px;
+
   background-color: #ffffff;
 }
 
 .about-title {
+  margin-bottom: 56px;
+
   text-align: center;
 }
 
@@ -349,6 +404,10 @@ img {
 }
 
 /* Ссылка на блог */
+
+.promo {
+  margin-bottom: 80px;
+}
 
 .promo-container {
   display: flex;
@@ -398,14 +457,18 @@ img {
 }
 
 .newsletter-wrapper {
+  padding: 26px;
+
   background-color: #ffffff;
 }
 
 .newsletter-description {
-  margin: 0;
+  margin-bottom: 42px;
 }
 
 .newsletter-input {
+  padding: 14px 16px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -422,9 +485,13 @@ img {
 
 /* Доставка */
 
+.delivery {
+  margin-bottom: 80px;
+}
+
 .delivery-container {
   display: flex;
-  padding: 64px;
+  padding: 64px 64px 64px 100px;
 
   background-color: #ff7799;
   background-image: url("../images/backgrounds/delivery-background.jpg");
@@ -433,10 +500,20 @@ img {
 }
 
 .delivery-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 371px;
+  margin-right: 135px;
+}
+
+.delivery-title {
+  margin-bottom: 24px;
 }
 
 .delivery-description {
+  margin: 0;
+
   line-height: 22px;
   color: #565c66;
 }
@@ -480,6 +557,7 @@ img {
 
 .contacts-content {
   width: 343px;
+  padding: 40px;
 
   background-color: #fcfcfc;
 }
@@ -521,6 +599,7 @@ img {
 .page-footer {
   width: 1170px;
   margin: 0 auto;
+  padding: 48px 0;
 }
 
 .page-footer-container {
@@ -577,6 +656,7 @@ img {
 .filter-form {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .filter-form-legend {
@@ -602,6 +682,31 @@ img {
 
 .filter-form-button {
   font-size: 14px;
+}
+
+/* Карточки товаров Каталога */
+
+.catalog-page {
+  margin-bottom: 40px;
+}
+
+.catalog-list {
+  margin-bottom: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 98px;
+}
+
+.pagination-button-more {
+  margin: 0 auto;
+}
+
+.pagination-container {
+  display: flex;
 }
 
 .pagination-list {
