@@ -561,6 +561,10 @@ img {
 
 /* Хлебные крошки Каталога */
 
+.breadcrumbs-list {
+  display: flex;
+}
+
 .breadcrumbs-link {
   font-weight: 700;
   font-size: 14px;
@@ -569,6 +573,11 @@ img {
 }
 
 /* Фильтр товаров Каталога */
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .filter-form-legend {
   font-size: 14px;
@@ -583,12 +592,20 @@ img {
   color: #2d3440;
 }
 
+.filter-list {
+  display: flex;
+}
+
 .filter-label-text {
   font-size: 14px;
 }
 
 .filter-form-button {
   font-size: 14px;
+}
+
+.pagination-list {
+  display: flex;
 }
 
 .pagination-link {
