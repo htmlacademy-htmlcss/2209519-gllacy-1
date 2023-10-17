@@ -423,12 +423,17 @@ img {
 /* Доставка */
 
 .delivery-container {
+  display: flex;
   padding: 64px;
 
   background-color: #ff7799;
   background-image: url("../images/backgrounds/delivery-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.delivery-content {
+  width: 371px;
 }
 
 .delivery-description {
@@ -439,6 +444,8 @@ img {
 /* Форма для заказа */
 
 .order {
+  width: 500px;
+
   background-color: #fcfcfc;
 }
 
