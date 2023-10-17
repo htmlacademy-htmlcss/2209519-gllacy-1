@@ -478,6 +478,12 @@ img {
   background-size: cover;
 }
 
+.contacts-content {
+  width: 343px;
+
+  background-color: #fcfcfc;
+}
+
 .contacts-subtitle {
   margin: 0;
 
