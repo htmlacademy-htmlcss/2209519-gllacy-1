@@ -312,6 +312,15 @@ img {
   background-color: #ffffff;
 }
 
+.about-title {
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .about-item {
   width: 442px;
 
