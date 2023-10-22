@@ -62,6 +62,18 @@ html {
   background-color: #ffffff;
 }
 
+.wrapper-pink {
+  background-color: #feafc3;
+}
+
+.wrapper-blue {
+  background-color: #69a9ff;
+}
+
+.wrapper-yellow {
+  background-color: #fcc850;
+}
+
 img {
   display: block;
   max-width: 100%;
