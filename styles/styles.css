@@ -115,6 +115,9 @@ img {
 }
 
 .button {
+  display: inline-block;
+  padding: 12px 32px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -125,6 +128,10 @@ img {
   text-decoration: none;
 
   background-color: #fcfcfc;
+  border: none;
+  border-radius: 26px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1),
+    0 0 0 4px rgba(252, 252, 252, 0.4);
   cursor: pointer;
 }
 
