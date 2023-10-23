@@ -189,8 +189,7 @@ textarea.field {
 
 .nav {
   display: flex;
-  width: 1170px;
-  margin: 0 auto;
+  flex-wrap: wrap;
   padding: 24px 0;
 }
 
