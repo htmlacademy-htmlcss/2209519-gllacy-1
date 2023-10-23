@@ -257,16 +257,18 @@ textarea.field {
 }
 
 .user-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 14px;
+
+  font-size: 14px;
   color: inherit;
   text-decoration: none;
-}
 
-.text-login {
-  font-size: 14px;
-}
-
-.basket-counter {
-  font-size: 14px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid transparent;
+  border-radius: 30px;
 }
 
 /* Главный раздел */
