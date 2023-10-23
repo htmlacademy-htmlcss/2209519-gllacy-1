@@ -271,6 +271,12 @@ textarea.field {
   border-radius: 30px;
 }
 
+.user-link-search {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
 /* Главный раздел */
 
 .main {
