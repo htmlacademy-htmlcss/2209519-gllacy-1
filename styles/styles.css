@@ -209,9 +209,9 @@ textarea.field {
 
 .nav-menu {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
-  width: 575px;
+  max-width: 575px;
   margin-right: auto;
 }
 
