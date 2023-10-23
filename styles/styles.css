@@ -74,6 +74,11 @@ html {
   background-color: #fcc850;
 }
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
