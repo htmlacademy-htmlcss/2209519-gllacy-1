@@ -233,12 +233,10 @@ textarea.field {
 /* Навигация пользователя */
 
 .nav-phone {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 16px;
+  margin: 18px 16px 0 0;
 
   font-weight: 700;
+  text-align: center;
   color: inherit;
   text-decoration: none;
 }
