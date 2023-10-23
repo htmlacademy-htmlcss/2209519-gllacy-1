@@ -236,16 +236,15 @@ textarea.field {
   margin: 18px 16px 0 0;
 
   font-weight: 700;
-  text-align: center;
   color: inherit;
   text-decoration: none;
 }
 
 .nav-user {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 431px;
-  margin: 0;
 }
 
 .user-item {
