@@ -135,6 +135,14 @@ img {
   cursor: pointer;
 }
 
+.button-other {
+  color: #fcfcfc;
+
+  background-color: #ff2f64;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1),
+    0 0 0 4px rgba(255, 47, 100, 0.3);
+}
+
 /* Шапка */
 
 /* Навигация */
@@ -492,12 +500,6 @@ img {
   line-height: 20px;
   font-family: "Inter", sans-serif;
   color: #b9b9b9;
-}
-
-.button-other {
-  color: #fcfcfc;
-
-  background-color: #ff2f64;
 }
 
 /* Доставка */
