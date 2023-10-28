@@ -283,6 +283,14 @@ textarea.field {
   flex-grow: 1;
 }
 
+.main-index {
+  display: grid;
+  align-items: start;
+
+  grid-template-columns: 1fr;
+  row-gap: 80px;
+}
+
 /* Слайдер */
 
 .slider {
