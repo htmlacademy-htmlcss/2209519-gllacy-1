@@ -373,10 +373,6 @@ textarea.field {
 
 /* Заказывайте мороженое и получайте подарки! */
 
-.presents {
-  margin-bottom: 81px;
-}
-
 .presents-title {
   margin-bottom: 55px;
 }
@@ -421,10 +417,6 @@ textarea.field {
 }
 
 /* Попробуйте самые популярные вкусы нашего мороженого */
-
-.catalog {
-  margin-bottom: 80px;
-}
 
 .catalog-title-common {
   margin-bottom: 56px;
