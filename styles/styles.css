@@ -314,8 +314,11 @@ textarea.field {
   justify-items: end;
 }
 
-.slide-active .slide-text {
-  width: 429px;
+.slide-active {
+  width: auto;
+  overflow: auto;
+
+  grid-template-columns: 1fr 367px;
 }
 
 .slide-text {
