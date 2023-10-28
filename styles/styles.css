@@ -293,10 +293,6 @@ textarea.field {
 
 /* Слайдер */
 
-.slider {
-  margin-bottom: 80px;
-}
-
 .slide {
   display: flex;
 }
