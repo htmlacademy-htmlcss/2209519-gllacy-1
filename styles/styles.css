@@ -108,7 +108,7 @@ img {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .title {
@@ -281,8 +281,6 @@ textarea.field {
 
 .main {
   flex-grow: 1;
-  width: 1170px;
-  margin: 0 auto;
 }
 
 /* Слайдер */
