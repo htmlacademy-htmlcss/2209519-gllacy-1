@@ -304,7 +304,14 @@ textarea.field {
 }
 
 .slide {
-  display: flex;
+  display: grid;
+  align-items: center;
+  width: 100px;
+  overflow: hidden;
+
+  gap: 0 10px;
+  grid-template-columns: 100px;
+  justify-items: end;
 }
 
 .slide-active .slide-text {
