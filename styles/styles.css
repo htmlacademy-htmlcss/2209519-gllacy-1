@@ -322,7 +322,11 @@ textarea.field {
 }
 
 .slide-text {
-  width: 470px;
+  display: none;
+}
+
+.slide-active .slide-text {
+  display: block;
 }
 
 .slide-caption {
