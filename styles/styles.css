@@ -367,6 +367,7 @@ textarea.field {
 
 .slider-bullets {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Заказывайте мороженое и получайте подарки! */
