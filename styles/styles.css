@@ -293,6 +293,16 @@ textarea.field {
 
 /* Слайдер */
 
+.slider-wrapper {
+  position: relative;
+
+  display: grid;
+  align-items: center;
+
+  gap: 0 40px;
+  grid-template-columns: 1fr auto auto;
+}
+
 .slide {
   display: flex;
 }
