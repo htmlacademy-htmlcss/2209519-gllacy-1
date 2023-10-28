@@ -427,8 +427,14 @@ textarea.field {
 }
 
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+
+  gap: 0 30px;
+  grid-template-columns: 270px 270px 270px 270px;
+}
+
+.catalog-page .catalog-list {
+  margin-bottom: 16px;
 }
 
 .catalog-item {
@@ -806,9 +812,9 @@ textarea.field {
   margin-bottom: 40px;
 }*/
 
-.catalog-list {
+/*.catalog-list {
   margin-bottom: 16px;
-}
+}*/
 
 .pagination {
   display: flex;
