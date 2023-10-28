@@ -382,17 +382,20 @@ textarea.field {
 }
 
 .presents-list {
-  display: flex;
+  display: grid;
+
+  gap: 0 30px;
+  grid-template-columns: 570px 570px;
 }
 
 .presents-item {
-  width: 570px;
-  padding: 36px;
+  padding: 36px 220px 36px 36px;
 
   background-color: #ff7799;
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain;
+  border-radius: 16px;
 }
 
 .presents-item-raspberry {
@@ -404,8 +407,7 @@ textarea.field {
 }
 
 .presents-subtitle {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
 
   font-weight: 700;
   font-size: 24px;
@@ -413,15 +415,9 @@ textarea.field {
 }
 
 .presents-description {
-  width: 317px;
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px;
 
   line-height: 22px;
-}
-
-.presents-item-raspberry {
-  margin-right: 30px;
 }
 
 /* Попробуйте самые популярные вкусы нашего мороженого */
