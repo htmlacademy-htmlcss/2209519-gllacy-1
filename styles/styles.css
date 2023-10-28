@@ -342,6 +342,14 @@ textarea.field {
   height: 100%;
 }
 
+.slide-active .slide-image {
+  width: 367px;
+  height: 507px;
+  padding: 0 20px;
+
+  opacity: 1;
+}
+
 .slide-caption {
   font-weight: 900;
   font-size: 36px;
