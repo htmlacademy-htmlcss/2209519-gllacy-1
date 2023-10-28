@@ -351,12 +351,16 @@ textarea.field {
 }
 
 .slide-caption {
+  margin: 0;
+
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 }
 
 .slide-description {
+  margin: 0;
+
   font-size: 18px;
   line-height: 24px;
 }
