@@ -329,6 +329,13 @@ textarea.field {
   display: block;
 }
 
+.slide-image {
+  width: 100px;
+  height: 150px;
+
+  opacity: 0.4;
+}
+
 .slide-caption {
   font-weight: 900;
   font-size: 36px;
