@@ -447,6 +447,8 @@ textarea.field {
 }
 
 .catalog-link {
+  display: block;
+
   color: inherit;
   text-decoration: none;
 }
