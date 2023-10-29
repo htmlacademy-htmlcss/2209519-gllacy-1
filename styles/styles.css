@@ -500,35 +500,38 @@ textarea.field {
 }
 
 .about-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+
+  gap: 40px 32px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .about-item {
-  width: 442px;
+  min-height: 48px;
+  padding-left: 64px;
 
   line-height: 22px;
   color: #565c66;
+
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 48px 48px;
 }
 
 .about-item-production {
   background-image: url("../images/icons/about-item/production.svg");
-  background-repeat: no-repeat;
 }
 
 .about-item-ingredients {
   background-image: url("../images/icons/about-item/ingredients.svg");
-  background-repeat: no-repeat;
 }
 
 .about-item-quality {
   background-image: url("../images/icons/about-item/quality.svg");
-  background-repeat: no-repeat;
 }
 
 .about-item-delivery {
   background-image: url("../images/icons/about-item/delivery.svg");
-  background-repeat: no-repeat;
 }
 
 /* Ссылка на блог */
