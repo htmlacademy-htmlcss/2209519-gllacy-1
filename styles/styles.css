@@ -443,6 +443,7 @@ textarea.field {
 
 .catalog-wrapper {
   background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 .catalog-link {
