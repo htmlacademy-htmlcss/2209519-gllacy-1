@@ -536,27 +536,26 @@ textarea.field {
 
 /* Ссылка на блог */
 
-.promo {
-  margin-bottom: 80px;
-}
-
 .promo-container {
-  display: flex;
+  display: grid;
+
+  gap: 0 30px;
+  grid-template-columns: 570px 570px;
 }
 
 .blog {
-  width: 570px;
-  margin-right: 30px;
+  padding: 32px 235px 67px 32px;
 
   background-color: #ff7799;
   background-image: url("../images/backgrounds/promo/blog-background.jpg");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;
+  border-radius: 16px;
 }
 
 .blog-title {
-  margin: 0;
+  margin: 0 0 12px;
 
   font-weight: 400;
   font-size: 16px;
@@ -566,7 +565,6 @@ textarea.field {
 
 .blog-link {
   display: block;
-  width: 303px;
 
   font-weight: 700;
   font-size: 24px;
@@ -578,23 +576,24 @@ textarea.field {
 /* Подписка на рассылку */
 
 .newsletter {
-  width: 570px;
   padding: 6px;
 
   background-color: #ff7799;
   background-image: url("../images/backgrounds/promo/newsletter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 16px;
 }
 
 .newsletter-wrapper {
   padding: 26px;
 
   background-color: #ffffff;
+  border-radius: 16px;
 }
 
 .newsletter-description {
-  margin-bottom: 42px;
+  margin: 0 0 42px;
 }
 
 .newsletter-input {
