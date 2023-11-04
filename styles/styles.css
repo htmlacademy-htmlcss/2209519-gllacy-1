@@ -455,19 +455,39 @@ textarea.field {
 }
 
 .catalog-item {
+  padding-top: 51px;
+
   text-align: center;
 }
 
 .catalog-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 25px 40px;
+
   background-color: #fcfcfc;
   border-radius: 8px;
 }
 
 .catalog-link {
   display: block;
+  width: 168px;
+  height: 168px;
+  margin: -77px auto 17px;
 
   color: inherit;
   text-decoration: none;
+
+  border-radius: 50%;
+}
+
+.catalog-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
 }
 
 .catalog-title {
