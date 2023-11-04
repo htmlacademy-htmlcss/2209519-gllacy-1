@@ -713,10 +713,12 @@ textarea.field {
 }
 
 .footer-navigation-menu {
-  display: flex;
-  flex-wrap: wrap;
-  width: 356px;
+  display: grid;
+  max-width: 400px;
   margin: 0 auto;
+
+  gap: 8px 24px;
+  grid-template-columns: 126px 182px;
 }
 
 .footer-navigation-link-favorites {
