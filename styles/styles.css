@@ -598,18 +598,17 @@ textarea.field {
 
 /* Доставка */
 
-.delivery {
-  margin-bottom: 80px;
-}
-
 .delivery-container {
-  display: flex;
-  padding: 64px 64px 64px 100px;
+  display: grid;
+  padding: 64px;
 
   background-color: #ff7799;
   background-image: url("../images/backgrounds/delivery-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  gap: 0 150px;
+  grid-template-columns: 1fr 500px;
 }
 
 .delivery-content {
@@ -617,7 +616,6 @@ textarea.field {
   flex-direction: column;
   justify-content: center;
   width: 371px;
-  margin-right: 135px;
 }
 
 .delivery-title {
