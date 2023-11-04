@@ -793,16 +793,29 @@ textarea.field {
 }
 
 .filter-select {
+  width: 196px;
+  height: 36px;
+  padding: 0 40px 0 14px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   font-family: "Inter", sans-serif;
   color: #2d3440;
+
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid transparent;
+  border-radius: 20px;
 }
 
 .filter-list {
   display: flex;
+  flex-wrap: wrap;
+  padding: 8px 24px;
+
+  background-color: rgb(252, 252, 252, 0.3);
+  border-radius: 18px;
 }
 
 .filter-label-text {
@@ -810,6 +823,10 @@ textarea.field {
 }
 
 .filter-form-button {
+  width: 185px;
+  padding: 7px;
+
+  font-weight: 700;
   font-size: 14px;
 }
 
