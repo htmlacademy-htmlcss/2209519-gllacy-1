@@ -294,6 +294,10 @@ textarea.field {
 
 /* Слайдер */
 
+.slider {
+  padding-top: 21px;
+}
+
 .slider-wrapper {
   position: relative;
 
@@ -352,7 +356,7 @@ textarea.field {
 }
 
 .slide-caption {
-  margin: 0;
+  margin: 0 0 24px;
 
   font-weight: 900;
   font-size: 36px;
@@ -360,7 +364,7 @@ textarea.field {
 }
 
 .slide-description {
-  margin: 0;
+  margin: 0 0 48px;
 
   font-size: 18px;
   line-height: 24px;
@@ -369,6 +373,19 @@ textarea.field {
 .slider-bullets {
   display: flex;
   flex-wrap: wrap;
+}
+
+.slider-social {
+  margin: 0 4px 0 auto;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
 }
 
 /* Заказывайте мороженое и получайте подарки! */
