@@ -108,7 +108,7 @@ img {
 
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .title {
@@ -635,6 +635,8 @@ textarea.field {
   width: 500px;
 
   background-color: #fcfcfc;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
 .order-description {
@@ -644,15 +646,6 @@ textarea.field {
 
 .order-form-label {
   font-weight: 700;
-}
-
-.order-form-input {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Inter", sans-serif;
-  color: #b9b9b9;
 }
 
 /* Контакты */
