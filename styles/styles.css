@@ -654,9 +654,10 @@ textarea.field {
   padding: 64px;
 
   background-color: #ff7799;
-  background-image: url("../images/backgrounds/contacts-background.jpg");
+  background-image: url("../images/backgrounds/contacts-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 16px;
 }
 
 .contacts-content {
