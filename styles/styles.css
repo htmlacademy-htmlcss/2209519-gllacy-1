@@ -513,6 +513,10 @@ textarea.field {
   line-height: 24px;
 }
 
+.catalog-button {
+  background-color: #ff2f64;
+}
+
 /* О компании */
 
 .about-container {
