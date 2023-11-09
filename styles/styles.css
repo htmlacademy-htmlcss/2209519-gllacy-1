@@ -398,7 +398,7 @@ textarea.field {
   display: grid;
 
   gap: 0 30px;
-  grid-template-columns: 570px 570px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .presents-item {
