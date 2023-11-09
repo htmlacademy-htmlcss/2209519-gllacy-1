@@ -753,21 +753,29 @@ textarea.field {
 
 .footer-navigation-menu {
   display: grid;
-  max-width: 400px;
   margin: 0 auto;
 
-  gap: 8px 24px;
-  grid-template-columns: 126px 182px;
+  gap: 5px 3px;
+  grid-template-columns: repeat(2, auto);
 }
 
 .footer-navigation-link {
+  display: inline-block;
+  padding-left: 23px;
+
   font-size: 14px;
-  color: inherit;
+  line-height: 20px;
+  color: #2d3440;
   text-decoration: none;
 }
 
 .footer-navigation-link-favorites {
   font-weight: 700;
+
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 16px 16px;
 }
 
 .page-footer-copyright-logo {
