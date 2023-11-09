@@ -246,10 +246,11 @@ textarea.field {
   flex-wrap: wrap;
   align-items: center;
   max-width: 431px;
+
+  gap: 16px;
 }
 
 .user-item {
-  margin-right: 16px;
   padding: 8px 0;
 }
 
