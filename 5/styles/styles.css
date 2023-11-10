@@ -246,10 +246,11 @@ textarea.field {
   flex-wrap: wrap;
   align-items: center;
   max-width: 431px;
+
+  gap: 16px;
 }
 
 .user-item {
-  margin-right: 16px;
   padding: 8px 0;
 }
 
@@ -382,10 +383,18 @@ textarea.field {
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 
   gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
 /* Заказывайте мороженое и получайте подарки! */
@@ -398,7 +407,7 @@ textarea.field {
   display: grid;
 
   gap: 0 30px;
-  grid-template-columns: 570px 570px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .presents-item {
@@ -446,8 +455,8 @@ textarea.field {
 .catalog-list {
   display: grid;
 
-  gap: 0 30px;
-  grid-template-columns: 270px 270px 270px 270px;
+  gap: 40px 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .catalog-page .catalog-list {
@@ -472,20 +481,25 @@ textarea.field {
 
 .catalog-link {
   display: block;
+  margin-bottom: 8px;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-image {
   width: 168px;
   height: 168px;
   margin: -77px auto 17px;
 
-  color: inherit;
-  text-decoration: none;
-
   border-radius: 50%;
 }
 
-.catalog-img img {
+.catalog-image img {
   display: block;
   width: 100%;
   height: 100%;
+  margin: 0;
 
   border-radius: 50%;
 }
@@ -499,7 +513,7 @@ textarea.field {
 }
 
 .catalog-text {
-  margin: 0;
+  margin: 0 0 16px;
 
   line-height: 22px;
   color: #565c66;
@@ -509,6 +523,10 @@ textarea.field {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.catalog-button {
+  background-color: #ff2f64;
 }
 
 /* О компании */
@@ -577,7 +595,7 @@ textarea.field {
   display: grid;
 
   gap: 0 30px;
-  grid-template-columns: 570px 570px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .blog {
@@ -623,6 +641,9 @@ textarea.field {
 }
 
 .newsletter-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 26px;
 
   background-color: #ffffff;
@@ -633,30 +654,41 @@ textarea.field {
   margin: 0 0 42px;
 }
 
+.newsletter-form {
+  display: grid;
+  margin-top: auto;
+
+  gap: 17px;
+  grid-template-columns: 1fr auto;
+}
+
 /* Доставка */
 
 .delivery-container {
   display: grid;
+  align-items: center;
   padding: 64px;
 
   background-color: #ff7799;
   background-image: url("../images/backgrounds/delivery-background.jpg");
   background-repeat: no-repeat;
+  background-position: center right;
   background-size: cover;
+  border-radius: 16px;
 
-  gap: 0 150px;
+  gap: 0 135px;
   grid-template-columns: 1fr 500px;
 }
 
 .delivery-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 371px;
+  width: 407px;
+  padding: 20px 0 0 36px;
 }
 
 .delivery-title {
   margin-bottom: 24px;
+
+  text-align: left;
 }
 
 .delivery-description {
@@ -669,7 +701,7 @@ textarea.field {
 /* Форма для заказа */
 
 .order {
-  width: 500px;
+  padding: 42px 40px 42px;
 
   background-color: #fcfcfc;
   border-radius: 8px;
@@ -677,12 +709,44 @@ textarea.field {
 }
 
 .order-description {
+  margin: 0 0 30px;
+
   line-height: 22px;
   color: #565c66;
 }
 
+.order-form {
+  display: grid;
+
+  gap: 20px 16px;
+  grid-template-columns: 117px 1fr;
+}
+
+.order-form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  gap: 9px;
+}
+
+.order-form-item-address {
+  grid-column: 1/-1;
+}
+
 .order-form-label {
   font-weight: 700;
+}
+
+.order-form-button {
+  display: block;
+  width: 152px;
+  margin: 10px auto 0;
+
+  grid-column: 1/-1;
 }
 
 /* Контакты */
@@ -693,6 +757,7 @@ textarea.field {
   background-color: #ff7799;
   background-image: url("../images/backgrounds/contacts-background.png");
   background-repeat: no-repeat;
+  background-position: right;
   background-size: cover;
   border-radius: 16px;
 }
@@ -707,7 +772,7 @@ textarea.field {
 }
 
 .contacts-subtitle {
-  margin: 0;
+  margin: 0 0 12px;
 
   font-weight: 400;
   font-size: 16px;
@@ -716,6 +781,8 @@ textarea.field {
 }
 
 .contacts-address {
+  margin: 0 0 24px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -730,7 +797,7 @@ textarea.field {
 }
 
 .contacts-tip {
-  margin: 0;
+  margin: 0 0 33px;
 
   font-weight: 400;
   font-size: 14px;
@@ -751,21 +818,29 @@ textarea.field {
 
 .footer-navigation-menu {
   display: grid;
-  max-width: 400px;
   margin: 0 auto;
 
-  gap: 8px 24px;
-  grid-template-columns: 126px 182px;
+  gap: 5px 3px;
+  grid-template-columns: repeat(2, auto);
 }
 
 .footer-navigation-link {
+  display: inline-block;
+  padding-left: 23px;
+
   font-size: 14px;
-  color: inherit;
+  line-height: 20px;
+  color: #2d3440;
   text-decoration: none;
 }
 
 .footer-navigation-link-favorites {
   font-weight: 700;
+
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 16px 16px;
 }
 
 .page-footer-copyright-logo {
