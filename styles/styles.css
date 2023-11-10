@@ -641,6 +641,9 @@ textarea.field {
 }
 
 .newsletter-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 26px;
 
   background-color: #ffffff;
@@ -649,6 +652,14 @@ textarea.field {
 
 .newsletter-description {
   margin: 0 0 42px;
+}
+
+.newsletter-form {
+  display: grid;
+  margin-top: auto;
+
+  gap: 17px;
+  grid-template-columns: 1fr auto;
 }
 
 /* Доставка */
