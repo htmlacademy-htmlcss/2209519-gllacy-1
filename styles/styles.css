@@ -455,7 +455,7 @@ textarea.field {
 .catalog-list {
   display: grid;
 
-  gap: 0 30px;
+  gap: 40px 30px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -481,12 +481,16 @@ textarea.field {
 
 .catalog-link {
   display: block;
-  width: 168px;
-  height: 168px;
-  margin: -77px auto 17px;
+  margin-bottom: 8px;
 
   color: inherit;
   text-decoration: none;
+}
+
+.catalog-image {
+  width: 168px;
+  height: 168px;
+  margin: -77px auto 17px;
 
   border-radius: 50%;
 }
@@ -509,7 +513,7 @@ textarea.field {
 }
 
 .catalog-text {
-  margin: 0;
+  margin: 0 0 16px;
 
   line-height: 22px;
   color: #565c66;
