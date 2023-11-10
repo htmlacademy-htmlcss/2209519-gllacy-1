@@ -383,10 +383,18 @@ textarea.field {
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 
   gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
 /* Заказывайте мороженое и получайте подарки! */
