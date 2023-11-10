@@ -657,7 +657,9 @@ textarea.field {
   background-color: #ff7799;
   background-image: url("../images/backgrounds/delivery-background.jpg");
   background-repeat: no-repeat;
+  background-position: center right;
   background-size: cover;
+  border-radius: 16px;
 
   gap: 0 135px;
   grid-template-columns: 1fr 500px;
@@ -684,7 +686,7 @@ textarea.field {
 /* Форма для заказа */
 
 .order {
-  width: 500px;
+  padding: 42px 40px 42px;
 
   background-color: #fcfcfc;
   border-radius: 8px;
@@ -692,12 +694,44 @@ textarea.field {
 }
 
 .order-description {
+  margin: 0 0 30px;
+
   line-height: 22px;
   color: #565c66;
 }
 
+.order-form {
+  display: grid;
+
+  gap: 20px 16px;
+  grid-template-columns: 117px 1fr;
+}
+
+.order-form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  gap: 9px;
+}
+
+.order-form-item-address {
+  grid-column: 1/-1;
+}
+
 .order-form-label {
   font-weight: 700;
+}
+
+.order-form-button {
+  display: block;
+  width: 152px;
+  margin: 10px auto 0;
+
+  grid-column: 1/-1;
 }
 
 /* Контакты */
