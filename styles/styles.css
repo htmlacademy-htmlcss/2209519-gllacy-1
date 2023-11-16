@@ -896,9 +896,27 @@ textarea.field {
 
 /* Хлебные крошки Каталога */
 
+.intro {
+  padding: 32px 0;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.intro-title {
+  order: 1;
+
+  text-align: left;
+}
+
 .breadcrumbs-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs-link {
