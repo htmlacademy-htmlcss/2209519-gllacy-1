@@ -279,6 +279,14 @@ textarea.field {
   padding: 0;
 }
 
+.text-login {
+  margin-left: 6px;
+}
+
+.basket-counter {
+  margin-left: 6px;
+}
+
 /* Главный раздел */
 
 .main {
