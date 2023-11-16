@@ -519,14 +519,36 @@ textarea.field {
   color: #565c66;
 }
 
+.catalog-price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+}
+
 .catalog-price {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
 .catalog-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  color: #fcfcfc;
+
   background-color: #ff2f64;
+  border: 2px solid transparent;
+  border-radius: 50%;
 }
 
 /* О компании */
