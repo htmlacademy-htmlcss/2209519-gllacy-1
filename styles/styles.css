@@ -934,15 +934,33 @@ textarea.field {
 
 /* Фильтр товаров Каталога */
 
+.filter {
+  padding: 6px 0 30px;
+}
+
 .filter-form {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.filter-fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px 15px 0;
+  padding: 0;
+
+  border: none;
 }
 
 .filter-form-legend {
+  margin: 0 0 9px 16px;
+
+  font-weight: 400;
   font-size: 14px;
 }
+
+/* Сортировка */
 
 .filter-select {
   width: 196px;
@@ -955,11 +973,95 @@ textarea.field {
   line-height: 20px;
   font-family: "Inter", sans-serif;
   color: #2d3440;
+  text-transform: lowercase;
 
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid transparent;
   border-radius: 20px;
 }
+
+/* Цена */
+
+.range-container-inputs {
+  display: flex;
+  align-items: baseline;
+}
+
+.range-input {
+  width: 30px;
+  margin: 0 -4px 0 -2px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Inter", Helvetica, sans-serif;
+  text-align: center;
+  color: #2d3440;
+
+  background-color: transparent;
+  border: none;
+
+  appearance: textfield;
+}
+
+.filter-range {
+  width: 196px;
+  height: 36px;
+  padding: 10px 16px;
+
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+}
+
+.filter-range-scale {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  width: 164px;
+  height: 2px;
+
+  background-color: rgba(86, 92, 102, 0.3);
+  transform: translate(-50%, -50%);
+}
+
+.filter-range-bar {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  height: 2px;
+
+  background-color: #565c66;
+  transform: translateY(-50%);
+}
+
+.filter-range-toggle {
+  position: absolute;
+  top: 50%;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+
+  background-color: #2d3440;
+  border: none;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.filter-range-toggle-min {
+  left: 0;
+}
+
+.filter-range-toggle-max {
+  right: 0;
+}
+
+/* Жирность */
 
 .filter-list {
   display: flex;
@@ -970,12 +1072,30 @@ textarea.field {
   border-radius: 18px;
 }
 
+.filter-item {
+  display: flex;
+  align-items: center;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.filter-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 8px;
+}
+
 .filter-label-text {
   font-size: 14px;
 }
 
 .filter-form-button {
   width: 185px;
+  margin: 0 0 16px -6px;
   padding: 7px;
 
   font-weight: 700;
