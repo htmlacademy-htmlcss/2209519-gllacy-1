@@ -407,10 +407,68 @@ textarea.field {
   line-height: 24px;
 }
 
+/* Навигационные стрелки */
+
+.slider-navigation-arrows {
+  position: absolute;
+  top: 50%;
+  left: 524px;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  width: 367px;
+
+  transform: translateY(-50%);
+}
+
+.slider-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+
+  color: #fcfcfc;
+
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #fcfcfc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Хлебные крошки слайдера */
+
 .slider-bullets {
+  position: absolute;
+  bottom: -23px;
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: end;
+
+  gap: 8px;
 }
+
+.slider-bullet {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-bullet-active {
+  background-color: #fcfcfc;
+}
+
+/* Иконки социальных сетей слайдера */
 
 .slider-social {
   margin: 0 4px 0 auto;
@@ -970,6 +1028,24 @@ textarea.field {
   border-color: currentColor;
 }
 
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  content: "";
+
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+
+  background-image: url(../images/icons/chevrons-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Фильтр товаров Каталога */
 
 .filter {
@@ -1169,9 +1245,38 @@ textarea.field {
   grid-template-columns: 16px minmax(120px, auto) 16px;
 }
 
+.pagination-arrow {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  padding: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-arrow-prev {
+  background-image: url(../images/icons/arrow-left.svg);
+}
+
+.pagination-arrow-next {
+  background-image: url(../images/icons/arrow-right.svg);
+}
+
+.pagination-arrow-disabled {
+  opacity: 0.3;
+
+  pointer-events: none;
+}
+
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 200px;
+  margin: 0 8px;
 }
 
 .pagination-link {
