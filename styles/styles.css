@@ -141,6 +141,22 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 15px 0 rgba(133, 133, 133, 0.15), 0 0 0 4px #fcfcfc;
+}
+
+.button:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: none;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1), 0 0 0 2px #2d3440;
+}
+
+.button:active {
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 2px #2d3440;
+}
+
 .button-other {
   color: #fcfcfc;
 
@@ -467,6 +483,27 @@ textarea.field {
   cursor: pointer;
 }
 
+.slider-arrow:hover {
+  color: #2d3440;
+
+  background-color: #fcfcfc;
+}
+
+.slider-arrow:focus-visible {
+  color: #2d3440;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #2d3440;
+  outline: none;
+}
+
+.slider-arrow:active {
+  color: #2d3440;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid transparent;
+}
+
 /* Хлебные крошки слайдера */
 
 .slider-bullets {
@@ -498,6 +535,20 @@ textarea.field {
   background-color: #fcfcfc;
 }
 
+.slider-bullet:hover {
+  border: 1px solid #fcfcfc;
+}
+
+.slider-bullet:focus-visible {
+  border: 1px solid #2d3440;
+  outline: none;
+}
+
+.slider-bullet:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 1px solid transparent;
+}
+
 /* Иконки социальных сетей слайдера */
 
 .slider-social {
@@ -519,6 +570,29 @@ textarea.field {
   align-items: center;
   width: 24px;
   height: 24px;
+
+  color: #fcfcfc;
+
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+  opacity: 1;
+}
+
+.social-link:hover {
+  background-color: #2d3440;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
+}
+
+.social-link:focus-visible {
+  background-color: #2d3440;
+  outline: none;
+  box-shadow: 0 0 0 2px #2d3440;
+}
+
+.social-link:active {
+  background-color: #2d3440;
+  box-shadow: 0 0 0 2px #fcfcfc;
+  opacity: 0.5;
 }
 
 /* Заказывайте мороженое и получайте подарки! */
