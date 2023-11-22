@@ -231,6 +231,21 @@ textarea.field {
   border-radius: 30px;
 }
 
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:focus-visible {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: #2d3440;
+  outline: none;
+}
+
+.nav-link:active {
+  background-color: #fcfcfc;
+  border-color: transparent;
+}
+
 /* Навигация пользователя */
 
 .nav-phone {
@@ -271,6 +286,21 @@ textarea.field {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid transparent;
   border-radius: 30px;
+}
+
+.user-link:hover {
+  color: #fcfcfc;
+
+  background-color: #ff4a78;
+}
+
+.user-link:focus-visible {
+  background-color: #ff4a78;
+  outline: none;
+}
+
+.user-link:active {
+  background-color: #ff4a78;
 }
 
 .user-link-search {
