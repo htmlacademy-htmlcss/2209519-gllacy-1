@@ -691,6 +691,20 @@ textarea.field {
   margin: -77px auto 17px;
 
   border-radius: 50%;
+
+  transition: transform 0.8s;
+}
+
+.catalog-image:hover {
+  transform: rotate(30deg);
+}
+
+.catalog-image:focus-visible {
+  transform: rotate(30deg) translate(30px, 0px);
+}
+
+.catalog-image:active {
+  transform: scale(0.8);
 }
 
 .catalog-image img {
@@ -747,6 +761,28 @@ textarea.field {
   background-color: #ff2f64;
   border: 2px solid transparent;
   border-radius: 50%;
+}
+
+.catalog-button:hover {
+  color: #2d3440;
+
+  background-color: rgba(252, 252, 252, 0.3);
+  border-color: #ff2f64;
+}
+
+.catalog-button:focus-visible {
+  color: #fcfcfc;
+
+  background-color: #ff2f64;
+  border-color: #2d3440;
+  outline: none;
+}
+
+.catalog-button:active {
+  color: #2d3440;
+
+  background-color: #ffcbd8;
+  border-color: #ff2f64;
 }
 
 /* О компании */
