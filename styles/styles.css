@@ -526,6 +526,8 @@ textarea.field {
   border: 2px solid #fcfcfc;
   border-radius: 50%;
   cursor: pointer;
+
+  fill: currentColor;
 }
 
 .slider-arrow:hover {
@@ -821,6 +823,8 @@ textarea.field {
   background-color: #ff2f64;
   border: 2px solid transparent;
   border-radius: 50%;
+
+  fill: currentColor;
 }
 
 .catalog-button:hover {
