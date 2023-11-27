@@ -1245,7 +1245,7 @@ textarea.field {
   height: 12px;
   margin: 0 8px;
 
-  background-image: url(../images/icons/chevrons-right.svg);
+  background-image: url("../images/icons/chevrons-right.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1463,11 +1463,11 @@ textarea.field {
 }
 
 .pagination-arrow-prev {
-  background-image: url(../images/icons/arrow-left.svg);
+  background-image: url("../images/icons/arrow-left.svg");
 }
 
 .pagination-arrow-next {
-  background-image: url(../images/icons/arrow-right.svg);
+  background-image: url("../images/icons/arrow-right.svg");
 }
 
 .pagination-arrow-disabled {
