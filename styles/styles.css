@@ -742,15 +742,15 @@ textarea.field {
   transition: transform 0.8s;
 }
 
-.catalog-image:hover {
+.catalog-link:hover .catalog-image {
   transform: rotate(30deg);
 }
 
-.catalog-image:focus-visible {
+.catalog-link:focus-visible .catalog-image {
   transform: rotate(30deg) translate(30px, 0px);
 }
 
-.catalog-image:active {
+.catalog-link:active .catalog-image {
   transform: scale(0.8);
 }
 
@@ -773,16 +773,16 @@ textarea.field {
   transition: transform 0.5s;
 }
 
-.catalog-title:hover {
+.catalog-link:hover .catalog-title {
   opacity: 0.5;
 }
 
-.catalog-title:focus-visible {
+.catalog-link:focus-visible .catalog-title {
   outline: none;
   opacity: 0.5;
 }
 
-.catalog-title:active {
+.catalog-link:active .catalog-title {
   transform: scale(0.8);
 }
 
