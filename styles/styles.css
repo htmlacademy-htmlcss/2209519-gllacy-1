@@ -266,6 +266,10 @@ textarea.field {
   padding: 8px 0;
 }
 
+.dropdown {
+  position: relative;
+}
+
 .nav-link {
   display: block;
   padding: 6px 13px;
@@ -290,6 +294,48 @@ textarea.field {
 .nav-link:active {
   background-color: #fcfcfc;
   border-color: transparent;
+}
+
+.nav-link-catalog {
+  position: relative;
+
+  padding-right: 39px;
+
+  background-color: transparent;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+}
+
+.nav-item-catalog:hover .nav-link-catalog {
+  color: #fcfcfc;
+
+  background-color: #ff4a78;
+  background-image: url("../images/icons/arrow-up.svg");
+}
+
+.dropdown-container {
+  z-index: 3;
+}
+
+.nav-drop {
+  position: absolute;
+  top: 100%;
+
+  display: none;
+  padding-top: 10px;
+}
+
+.nav-drop .dropdown-wrapper {
+  width: 135px;
+  padding: 8px 0;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  background-color: #fcfcfc;
+  box-shadow: rgba(45, 52, 64, 0.12);
 }
 
 /* Навигация пользователя */
@@ -347,6 +393,8 @@ textarea.field {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid transparent;
   border-radius: 30px;
+
+  fill: currentColor;
 }
 
 .user-link:hover {
