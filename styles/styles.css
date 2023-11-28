@@ -315,6 +315,10 @@ textarea.field {
   background-image: url("../images/icons/arrow-up.svg");
 }
 
+.nav-item-catalog:hover .nav-drop {
+  display: block;
+}
+
 .dropdown-container {
   z-index: 3;
 }
