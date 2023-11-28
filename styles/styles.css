@@ -266,6 +266,10 @@ textarea.field {
   padding: 8px 0;
 }
 
+.dropdown {
+  position: relative;
+}
+
 .nav-link {
   display: block;
   padding: 6px 13px;
@@ -290,6 +294,52 @@ textarea.field {
 .nav-link:active {
   background-color: #fcfcfc;
   border-color: transparent;
+}
+
+.nav-link-catalog {
+  position: relative;
+
+  padding-right: 39px;
+
+  background-color: transparent;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+}
+
+.nav-item-catalog:hover .nav-link-catalog {
+  color: #fcfcfc;
+
+  background-color: #ff4a78;
+  background-image: url("../images/icons/arrow-up.svg");
+}
+
+.nav-item-catalog:hover .nav-drop {
+  display: block;
+}
+
+.dropdown-container {
+  z-index: 3;
+}
+
+.nav-drop {
+  position: absolute;
+  top: 100%;
+
+  display: none;
+  padding-top: 10px;
+}
+
+.nav-drop .dropdown-wrapper {
+  width: 135px;
+  padding: 8px 0;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  background-color: #fcfcfc;
+  box-shadow: rgba(45, 52, 64, 0.12);
 }
 
 /* Навигация пользователя */
@@ -347,6 +397,8 @@ textarea.field {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid transparent;
   border-radius: 30px;
+
+  fill: currentColor;
 }
 
 .user-link:hover {
@@ -526,6 +578,8 @@ textarea.field {
   border: 2px solid #fcfcfc;
   border-radius: 50%;
   cursor: pointer;
+
+  fill: currentColor;
 }
 
 .slider-arrow:hover {
@@ -740,15 +794,15 @@ textarea.field {
   transition: transform 0.8s;
 }
 
-.catalog-image:hover {
+.catalog-link:hover .catalog-image {
   transform: rotate(30deg);
 }
 
-.catalog-image:focus-visible {
+.catalog-link:focus-visible .catalog-image {
   transform: rotate(30deg) translate(30px, 0px);
 }
 
-.catalog-image:active {
+.catalog-link:active .catalog-image {
   transform: scale(0.8);
 }
 
@@ -771,16 +825,16 @@ textarea.field {
   transition: transform 0.5s;
 }
 
-.catalog-title:hover {
+.catalog-link:hover .catalog-title {
   opacity: 0.5;
 }
 
-.catalog-title:focus-visible {
+.catalog-link:focus-visible .catalog-title {
   outline: none;
   opacity: 0.5;
 }
 
-.catalog-title:active {
+.catalog-link:active .catalog-title {
   transform: scale(0.8);
 }
 
@@ -821,6 +875,8 @@ textarea.field {
   background-color: #ff2f64;
   border: 2px solid transparent;
   border-radius: 50%;
+
+  fill: currentColor;
 }
 
 .catalog-button:hover {
@@ -1241,7 +1297,7 @@ textarea.field {
   height: 12px;
   margin: 0 8px;
 
-  background-image: url(../images/icons/chevrons-right.svg);
+  background-image: url("../images/icons/chevrons-right.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1459,11 +1515,11 @@ textarea.field {
 }
 
 .pagination-arrow-prev {
-  background-image: url(../images/icons/arrow-left.svg);
+  background-image: url("../images/icons/arrow-left.svg");
 }
 
 .pagination-arrow-next {
-  background-image: url(../images/icons/arrow-right.svg);
+  background-image: url("../images/icons/arrow-right.svg");
 }
 
 .pagination-arrow-disabled {
