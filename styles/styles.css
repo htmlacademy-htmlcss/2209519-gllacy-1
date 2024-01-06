@@ -378,6 +378,12 @@ textarea.field {
   background-color: #ff7799;
 }
 
+.nav-drop-link-current {
+  color: #fcfcfc;
+
+  background-color: #ff4a78;
+}
+
 /* Навигация пользователя */
 
 .nav-phone {
