@@ -270,6 +270,17 @@ textarea.field {
   position: relative;
 }
 
+.dropdown:hover .nav-link-catalog {
+  color: #fcfcfc;
+
+  background-color: #ff4a78;
+  background-image: url("../images/icons/arrow-up.svg");
+}
+
+.dropdown:hover .nav-drop {
+  display: block;
+}
+
 .nav-link {
   display: block;
   padding: 6px 13px;
@@ -308,17 +319,6 @@ textarea.field {
   background-size: 16px;
 }
 
-.nav-item-catalog:hover .nav-link-catalog {
-  color: #fcfcfc;
-
-  background-color: #ff4a78;
-  background-image: url("../images/icons/arrow-up.svg");
-}
-
-.nav-item-catalog:hover .nav-drop {
-  display: block;
-}
-
 .dropdown-container {
   z-index: 3;
 }
@@ -328,7 +328,6 @@ textarea.field {
   top: 100%;
 
   display: none;
-  padding-top: 10px;
 }
 
 .nav-drop .dropdown-wrapper {
@@ -339,7 +338,44 @@ textarea.field {
   line-height: 20px;
 
   background-color: #fcfcfc;
-  box-shadow: rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
+}
+
+.nav-drop-link {
+  display: inline-block;
+  width: 100%;
+  padding: 6px 0 6px 16px;
+
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.nav-drop-link-new-products {
+  position: relative;
+
+  padding: 8px 16px;
+
+  font-weight: 700;
+}
+
+.nav-drop-link-new-products + span {
+  display: block;
+  width: 103px;
+  height: 1px;
+  margin: 4px auto;
+
+  background-color: #b9b9b9;
+}
+
+.nav-drop-link:hover,
+.nav-drop-link:focus-within {
+  background-color: #ffcbd8;
+  outline: none;
+}
+
+.nav-drop-link:active {
+  background-color: #ff7799;
 }
 
 /* Навигация пользователя */
