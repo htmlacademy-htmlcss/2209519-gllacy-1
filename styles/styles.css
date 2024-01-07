@@ -230,6 +230,41 @@ textarea.field {
   opacity: 1;
 }
 
+.input {
+  padding: 14px 16px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  color: #2d3440;
+
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 4px;
+  outline: 1px solid #b9b9b9;
+}
+
+.input::placeholder {
+  color: #b9b9b9;
+}
+
+.input:hover {
+  outline-color: #2d3440;
+}
+
+.input:focus-visible {
+  outline: 2px solid #2d3440;
+  outline-offset: -1px;
+}
+
+.input:disabled {
+  color: #b9b9b9;
+
+  background-color: #fcfcfc;
+
+  pointer-events: none;
+}
+
 /* Шапка */
 
 /* Навигация */
@@ -418,10 +453,6 @@ textarea.field {
   gap: 16px;
 }
 
-.user-item {
-  padding: 8px 0;
-}
-
 .user-item:last-child {
   margin-right: 0;
 }
@@ -462,6 +493,40 @@ textarea.field {
   width: 32px;
   height: 32px;
   padding: 0;
+}
+
+/* Всплывающий блок */
+
+.search {
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  display: none;
+  padding-top: 10px;
+}
+
+.search .dropdown-wrapper {
+  width: 356px;
+  padding: 24px 16px;
+
+  background-color: #fcfcfc;
+  border-radius: 4px;
+}
+
+.search-input {
+  width: 100%;
+
+  color: #2d3440;
+
+  background-color: #fcfcfc;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.user-item-search:hover .search,
+.user-item-search:focus-within .search {
+  display: block;
 }
 
 .text-login {
