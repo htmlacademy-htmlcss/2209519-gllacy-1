@@ -1377,7 +1377,7 @@ textarea.field {
 .filter-select {
   width: 196px;
   height: 36px;
-  padding: 0 40px 0 14px;
+  padding: 0 32px 0 14px;
 
   font-style: normal;
   font-weight: 400;
@@ -1388,8 +1388,25 @@ textarea.field {
   text-transform: lowercase;
 
   background-color: rgba(252, 252, 252, 0.3);
-  border: 2px solid transparent;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center right 13px;
+  border: none;
   border-radius: 20px;
+  cursor: pointer;
+
+  appearance: none;
+}
+
+.filter-select:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.filter-select:focus-visible {
+  background-color: rgba(252, 252, 252, 0.4);
+  border-radius: 26px;
+  outline: 2px solid #fcfcfc;
+  outline-offset: -2px;
 }
 
 /* Цена */
@@ -1397,6 +1414,17 @@ textarea.field {
 .range-container-inputs {
   display: flex;
   align-items: baseline;
+}
+
+.range-container-inputs label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Inter", Helvetica, sans-serif;
+  color: #2d3440;
+
+  gap: 0;
 }
 
 .range-input {
@@ -1441,8 +1469,9 @@ textarea.field {
 .filter-range-bar {
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 40px;
 
+  width: 56px;
   height: 2px;
 
   background-color: #565c66;
@@ -1465,12 +1494,58 @@ textarea.field {
   cursor: pointer;
 }
 
+.filter-range-toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #fcfcfc;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filter-range-toggle:hover {
+  background-color: #fcfcfc;
+}
+
+.filter-range-toggle:hover::before {
+  background-color: #2d3440;
+}
+
+.filter-range-toggle:active {
+  background-color: #2d3440;
+}
+
+.filter-range-toggle:active::before {
+  background-color: #2d3440;
+}
+
+.filter-range-toggle:focus-visible {
+  background-color: #fcfcfc;
+  outline: 2px solid #2d3440;
+}
+
+.filter-range-toggle:focus-visible::before {
+  background-color: #2d3440;
+}
+
 .filter-range-toggle-min {
-  left: 0;
+  left: -16px;
 }
 
 .filter-range-toggle-max {
-  right: 0;
+  right: -16px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  margin: 0;
+
+  -webkit-appearance: none;
 }
 
 /* Жирность */
@@ -1501,8 +1576,121 @@ textarea.field {
   gap: 8px;
 }
 
+.filter-input-radio {
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+  margin: 0;
+
+  background-color: transparent;
+  border: 2px solid #2d3440;
+  border-radius: 50%;
+  cursor: pointer;
+
+  appearance: none;
+}
+
+.filter-input-radio:hover {
+  border-color: #fcfcfc;
+}
+
+.filter-input-radio:focus-visible {
+  border-color: #fcfcfc;
+  outline: none;
+}
+
+.filter-input-radio:disabled {
+  opacity: 0.5;
+
+  pointer-events: none;
+}
+
+.filter-input-radio:disabled:hover {
+  border-color: #2d3440;
+}
+
+.filter-input-radio:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #2d3440;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.filter-input-radio:checked:hover::before {
+  background-color: #fcfcfc;
+}
+
+.filter-input-radio:checked:focus-visible::before {
+  background-color: #fcfcfc;
+}
+
+.filter-input-radio:checked:disabled:hover::before {
+  background-color: #2d3440;
+}
+
 .filter-label-text {
   font-size: 14px;
+}
+
+/* Наполнители */
+
+.filter-input-check {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+
+  background-color: transparent;
+  border: 2px solid #2d3440;
+  border-radius: 2px;
+  cursor: pointer;
+
+  appearance: none;
+}
+
+.filter-input-check:hover {
+  border-color: #fcfcfc;
+}
+
+.filter-input-check:focus-visible {
+  border-color: #fcfcfc;
+  outline: none;
+}
+
+.filter-input-check:disabled {
+  opacity: 0.5;
+
+  pointer-events: none;
+}
+
+.filter-input-check:disabled:hover {
+  border-color: #2d3440;
+}
+
+.filter-input-check:checked:disabled:hover {
+  background-image: url("../images/icons/check-on.svg");
+}
+
+.filter-input-check:checked {
+  background-image: url("../images/icons/check-on.svg");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  border: none;
+}
+
+.filter-input-check:checked:hover {
+  background-image: url("../images/icons/сhecked-hover.svg");
+}
+
+.filter-input-check:checked:focus-visible {
+  background-image: url("../images/icons/сhecked-hover.svg");
 }
 
 .filter-form-button {
