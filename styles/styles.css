@@ -355,14 +355,15 @@ textarea.field {
 }
 
 .dropdown-container {
-  z-index: 3;
-}
-
-.nav-drop {
   position: absolute;
   top: 100%;
+  z-index: 3;
 
   display: none;
+
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 }
 
 .nav-drop .dropdown-wrapper {
@@ -453,6 +454,10 @@ textarea.field {
   gap: 16px;
 }
 
+.user-item {
+  padding: 8px 0;
+}
+
 .user-item:last-child {
   margin-right: 0;
 }
@@ -498,12 +503,7 @@ textarea.field {
 /* Всплывающий блок */
 
 .search {
-  position: absolute;
-  top: 100%;
   right: 0;
-
-  display: none;
-  padding-top: 10px;
 }
 
 .search .dropdown-wrapper {
