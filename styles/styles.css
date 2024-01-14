@@ -1910,54 +1910,68 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Наполнители */
 
 .filter-input-check {
+  position: relative;
+
   width: 16px;
   height: 16px;
   margin: 0;
 
+  color: #2d3440;
+
   background-color: transparent;
-  border: 2px solid #2d3440;
-  border-radius: 2px;
+  border: none;
   cursor: pointer;
 
   appearance: none;
 }
 
-.filter-input-check:hover {
-  border-color: #fcfcfc;
+.filter-input-check::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  background-color: #2d3440;
+
+  -webkit-mask-image: url("../images/icons/checkbox-unchecked.svg");
+  mask-image: url("../images/icons/checkbox-unchecked.svg");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.filter-input-check:checked:after {
+  -webkit-mask-image: url("../images/icons/check-on.svg");
+  mask-image: url("../images/icons/check-on.svg");
+}
+
+.filter-input-check:hover::after {
+  background-color: #fcfcfc;
 }
 
 .filter-input-check:focus-visible {
-  border-color: #fcfcfc;
   outline: none;
 }
 
-.filter-input-check:disabled {
+.filter-input-check:focus-visible::after {
+  background-color: #fcfcfc;
+}
+
+.filter-input-check:active::after {
+  background-color: #2d3440;
+  opacity: 0.5;
+}
+
+.filter-input-check:disabled::after {
+  background-color: #2d3440;
   opacity: 0.5;
 
   pointer-events: none;
-}
-
-.filter-input-check:disabled:hover {
-  border-color: #2d3440;
-}
-
-.filter-input-check:checked:disabled:hover {
-  background-image: url("../images/icons/check-on.svg");
-}
-
-.filter-input-check:checked {
-  background-image: url("../images/icons/check-on.svg");
-  background-repeat: no-repeat;
-  background-size: 16px;
-  border: none;
-}
-
-.filter-input-check:checked:hover {
-  background-image: url("../images/icons/сhecked-hover.svg");
-}
-
-.filter-input-check:checked:focus-visible {
-  background-image: url("../images/icons/сhecked-hover.svg");
 }
 
 .filter-form-button {
