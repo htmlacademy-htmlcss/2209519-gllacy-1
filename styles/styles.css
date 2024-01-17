@@ -314,13 +314,17 @@ textarea.field {
 
 .nav-link {
   display: block;
-  padding: 6px 13px;
+  padding: 6px 14px;
 
   color: inherit;
   text-decoration: none;
 
   border: 2px solid transparent;
   border-radius: 30px;
+}
+
+li:nth-child(2) .nav-link {
+  padding: 6px 13px;
 }
 
 .nav-link:hover {
@@ -452,7 +456,7 @@ textarea.field {
   align-items: center;
   max-width: 431px;
 
-  gap: 16px;
+  gap: 18px;
 }
 
 .user-item {
