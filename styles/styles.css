@@ -272,7 +272,7 @@ textarea.field {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  padding: 24px 0;
+  padding: 23px 0 24px;
 }
 
 /* Навигация по сайту */
@@ -784,6 +784,14 @@ li:nth-child(2) .nav-link {
   justify-items: end;
 }
 
+.slide:nth-child(2) {
+  margin-top: 14px;
+}
+
+.slide:nth-child(3) {
+  margin-top: 13px;
+}
+
 .slide-active {
   width: auto;
   overflow: auto;
@@ -836,7 +844,7 @@ li:nth-child(2) .nav-link {
 .slide-active .slide-image {
   width: 367px;
   height: 507px;
-  padding: 0 20px;
+  padding: 0 18px 0 22px;
 
   opacity: 1;
 }
@@ -849,7 +857,7 @@ li:nth-child(2) .nav-link {
 }
 
 .slide-caption {
-  margin: 0 0 24px;
+  margin: 4px 0 24px;
 
   font-weight: 900;
   font-size: 36px;
@@ -867,13 +875,13 @@ li:nth-child(2) .nav-link {
 
 .slider-navigation-arrows {
   position: absolute;
-  top: 50%;
-  left: 524px;
+  top: 256px;
+  left: 527px;
   z-index: 2;
 
   display: flex;
   justify-content: space-between;
-  width: 367px;
+  width: 364px;
 
   transform: translateY(-50%);
 }
@@ -920,7 +928,7 @@ li:nth-child(2) .nav-link {
 
 .slider-bullets {
   position: absolute;
-  bottom: -23px;
+  bottom: -26px;
 
   display: flex;
   flex-wrap: wrap;
@@ -964,7 +972,7 @@ li:nth-child(2) .nav-link {
 /* Иконки социальных сетей слайдера */
 
 .slider-social {
-  margin: 0 4px 0 auto;
+  margin: 0 auto;
 }
 
 .social-list {
@@ -972,6 +980,7 @@ li:nth-child(2) .nav-link {
   flex-wrap: wrap;
   justify-content: end;
   align-items: center;
+  margin-top: 2px;
 
   gap: 16px;
 }
