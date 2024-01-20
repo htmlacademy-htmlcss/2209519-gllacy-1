@@ -1575,6 +1575,18 @@ input:nth-of-type(2) {
   text-decoration: none;
 }
 
+.contacts-phone:hover {
+  opacity: 0.5;
+}
+
+.contacts-phone:focus-visible {
+  opacity: 0.5;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
+}
+
 .contacts-tip {
   margin: 0 0 33px;
 
@@ -1613,6 +1625,21 @@ input:nth-of-type(2) {
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
+
+  transition: transform 0.5s;
+}
+
+.footer-navigation-link:hover {
+  opacity: 0.5;
+}
+
+.footer-navigation-link:focus-visible {
+  outline: none;
+  opacity: 0.5;
+}
+
+.footer-navigation-link:active {
+  transform: scale(0.8);
 }
 
 .footer-navigation-link-favorites {
@@ -1631,6 +1658,21 @@ input:nth-of-type(2) {
   margin: 2px 0 14px 1px;
 
   color: #2d3440;
+
+  transition: transform 0.5s;
+}
+
+.page-footer-copyright-logo:hover {
+  opacity: 0.5;
+}
+
+.page-footer-copyright-logo:focus-visible {
+  outline: none;
+  opacity: 0.5;
+}
+
+.page-footer-copyright-logo:active {
+  transform: scale(0.8);
 }
 
 .page-footer-copyright-logo img {
@@ -1651,6 +1693,21 @@ input:nth-of-type(2) {
   text-decoration: none;
 
   border-bottom: 1px solid rgba(46, 52, 64, 0.5);
+
+  transition: transform 0.5s;
+}
+
+.page-footer-copyright-link:hover {
+  opacity: 0.5;
+}
+
+.page-footer-copyright-link:focus-visible {
+  outline: none;
+  opacity: 0.5;
+}
+
+.page-footer-copyright-link:active {
+  transform: scale(0.8);
 }
 
 /* Хлебные крошки Каталога */
