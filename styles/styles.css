@@ -1019,6 +1019,7 @@ li:nth-child(2) .nav-link {
 /* Заказывайте мороженое и получайте подарки! */
 
 .presents-title {
+  margin-top: 2px;
   margin-bottom: 55px;
 }
 
@@ -1068,7 +1069,7 @@ li:nth-child(2) .nav-link {
 }
 
 .catalog-title-common {
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 }
 
 .catalog-list {
@@ -1243,7 +1244,7 @@ li:nth-child(2) .nav-link {
 }
 
 .about-title {
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 
   text-align: center;
 }
@@ -1304,7 +1305,7 @@ li:nth-child(2) .nav-link {
 }
 
 .blog-title {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
 
   font-weight: 400;
   font-size: 16px;
@@ -1345,15 +1346,19 @@ li:nth-child(2) .nav-link {
 }
 
 .newsletter-description {
-  margin: 0 0 42px;
+  margin-top: 3px;
 }
 
 .newsletter-form {
   display: grid;
   margin-top: auto;
 
-  gap: 17px;
+  gap: 15px;
   grid-template-columns: 1fr auto;
+}
+
+.newsletter-button {
+  padding: 12px 36px;
 }
 
 /* Доставка */
@@ -1376,7 +1381,7 @@ li:nth-child(2) .nav-link {
 
 .delivery-content {
   width: 407px;
-  padding: 20px 0 0 36px;
+  padding: 6px 0 0 36px;
 }
 
 .delivery-title {
@@ -1548,6 +1553,7 @@ li:nth-child(2) .nav-link {
 .contacts-address {
   margin: 0 0 24px;
 
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1587,13 +1593,13 @@ li:nth-child(2) .nav-link {
   display: grid;
   margin: 0 auto;
 
-  gap: 5px 3px;
+  gap: 8px 1px;
   grid-template-columns: repeat(2, auto);
 }
 
 .footer-navigation-link {
   display: inline-block;
-  padding-left: 23px;
+  padding-left: 24px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1614,7 +1620,7 @@ li:nth-child(2) .nav-link {
   display: block;
   width: 93px;
   height: 27px;
-  margin-bottom: 14px;
+  margin: 2px 0 14px 1px;
 
   color: #2d3440;
 }
@@ -1642,7 +1648,7 @@ li:nth-child(2) .nav-link {
 /* Хлебные крошки Каталога */
 
 .intro {
-  padding: 32px 0;
+  padding: 32px 0 32px 2px;
 }
 
 .intro-container {
@@ -1723,12 +1729,16 @@ li:nth-child(2) .nav-link {
   font-size: 14px;
 }
 
+.filter-fieldset-fat .filter-form-legend {
+  margin: 0 0 6px 16px;
+}
+
 /* Сортировка */
 
 .filter-select {
   width: 196px;
   height: 36px;
-  padding: 0 32px 0 14px;
+  padding: 0 32px 0 16px;
 
   font-style: normal;
   font-weight: 400;
@@ -1780,7 +1790,7 @@ li:nth-child(2) .nav-link {
 
 .range-input {
   width: 30px;
-  margin: 0 -4px 0 -2px;
+  margin: 0 -3px 0 -3px;
   padding: 0;
 
   font-weight: 400;
@@ -1904,7 +1914,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 8px 24px;
+  padding: 9px 24px;
 
   background-color: rgb(252, 252, 252, 0.3);
   border-radius: 18px;
@@ -2073,9 +2083,9 @@ input[type="number"]::-webkit-inner-spin-button {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 41px 0;
+  padding: 38px 0 40px 0;
 
-  grid-template-columns: 180px 1fr 180px;
+  grid-template-columns: 166px 1fr 180px;
 }
 
 .pagination::before {
@@ -2127,7 +2137,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-wrap: wrap;
   max-width: 200px;
-  margin: 0 8px;
+  margin: 0 5px;
 }
 
 .pagination-link {
