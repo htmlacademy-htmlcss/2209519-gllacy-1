@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/styles.css" rel="stylesheet">
+  <link href="favicon.ico.ico" rel="icon">
   <title>Интернет-магазин мороженого "Глейси"</title>
   <base href="https://htmlacademy-htmlcss.github.io/2209519-gllacy-1/9/">
 </head>
@@ -440,7 +441,7 @@
 
         <div class="catalog-container container">
 
-          <h2 class="catalog-title-common title">Попробуйте самые популярные вкусы <br>нашего мороженого</h2>
+          <h2 class="catalog-title-common title">Попробуйте самые популярные <br>вкусы нашего мороженого</h2>
 
           <!-- Малинка -->
 
@@ -863,6 +864,36 @@
     </footer>
 
     <!-- Модальное окно -->
+
+    <div class="modal-window">
+
+      <div class="modal-auth">
+
+        <button class="button-modal-close" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+
+            <label class="visually-hidden" for="modal-form-name">Имя и фамилия.</label>
+            <input class="form-input field" type="text" id="modal-form-name" name="form-name" placeholder="Имя и фамилия" required>
+
+            <label class="visually-hidden" for="modal-form-email">Телефон.</label>
+            <input class="form-input field" type="email" id="modal-form-email" name="form-email" placeholder="email@example.com" required>
+
+            <textarea class="form-input field" name="message" placeholder="В свободной форме"></textarea>
+            <button class="modal-button button button-other" type="submit">Отправить</button>
+
+          </form>
+
+        </section>
+
+      </div>
+
+    </div>
 
   </div>
 

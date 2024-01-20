@@ -272,7 +272,7 @@ textarea.field {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  padding: 24px 0;
+  padding: 23px 0 24px;
 }
 
 /* Навигация по сайту */
@@ -314,13 +314,17 @@ textarea.field {
 
 .nav-link {
   display: block;
-  padding: 6px 13px;
+  padding: 6px 14px;
 
   color: inherit;
   text-decoration: none;
 
   border: 2px solid transparent;
   border-radius: 30px;
+}
+
+li:nth-child(2) .nav-link {
+  padding: 6px 13px;
 }
 
 .nav-link:hover {
@@ -452,7 +456,7 @@ textarea.field {
   align-items: center;
   max-width: 431px;
 
-  gap: 16px;
+  gap: 18px;
 }
 
 .user-item {
@@ -534,16 +538,16 @@ textarea.field {
   right: 0;
 
   width: 420px;
-  padding: 49px 48px 52px 48px;
+  padding: 55px 48px 52px 49px;
 }
 
 .login-title {
-  margin: 0 0 31px;
+  margin: 0 0 36px;
 }
 
 .login-input {
   margin-bottom: 15px;
-  padding: 14px 16px;
+  padding: 14px 84px 14px 16px;
 
   font-size: 16px;
   line-height: 20px;
@@ -554,6 +558,10 @@ textarea.field {
   border: none;
   border-radius: 4px;
   outline: 1px solid #b9b9b9;
+}
+
+input[type="password"] {
+  padding: 13px 88px 14px 11px;
 }
 
 .login-wrapper {
@@ -780,6 +788,14 @@ textarea.field {
   justify-items: end;
 }
 
+.slide:nth-child(2) {
+  margin-top: 14px;
+}
+
+.slide:nth-child(3) {
+  margin-top: 13px;
+}
+
 .slide-active {
   width: auto;
   overflow: auto;
@@ -832,7 +848,7 @@ textarea.field {
 .slide-active .slide-image {
   width: 367px;
   height: 507px;
-  padding: 0 20px;
+  padding: 0 18px 0 22px;
 
   opacity: 1;
 }
@@ -845,7 +861,7 @@ textarea.field {
 }
 
 .slide-caption {
-  margin: 0 0 24px;
+  margin: 4px 0 24px;
 
   font-weight: 900;
   font-size: 36px;
@@ -863,13 +879,13 @@ textarea.field {
 
 .slider-navigation-arrows {
   position: absolute;
-  top: 50%;
-  left: 524px;
+  top: 256px;
+  left: 527px;
   z-index: 2;
 
   display: flex;
   justify-content: space-between;
-  width: 367px;
+  width: 364px;
 
   transform: translateY(-50%);
 }
@@ -916,7 +932,7 @@ textarea.field {
 
 .slider-bullets {
   position: absolute;
-  bottom: -23px;
+  bottom: -26px;
 
   display: flex;
   flex-wrap: wrap;
@@ -960,7 +976,7 @@ textarea.field {
 /* Иконки социальных сетей слайдера */
 
 .slider-social {
-  margin: 0 4px 0 auto;
+  margin: 0 auto;
 }
 
 .social-list {
@@ -968,6 +984,7 @@ textarea.field {
   flex-wrap: wrap;
   justify-content: end;
   align-items: center;
+  margin-top: 2px;
 
   gap: 16px;
 }
@@ -1006,6 +1023,7 @@ textarea.field {
 /* Заказывайте мороженое и получайте подарки! */
 
 .presents-title {
+  margin-top: 2px;
   margin-bottom: 55px;
 }
 
@@ -1055,7 +1073,7 @@ textarea.field {
 }
 
 .catalog-title-common {
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 }
 
 .catalog-list {
@@ -1230,7 +1248,7 @@ textarea.field {
 }
 
 .about-title {
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 
   text-align: center;
 }
@@ -1291,7 +1309,7 @@ textarea.field {
 }
 
 .blog-title {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
 
   font-weight: 400;
   font-size: 16px;
@@ -1332,15 +1350,19 @@ textarea.field {
 }
 
 .newsletter-description {
-  margin: 0 0 42px;
+  margin-top: 3px;
 }
 
 .newsletter-form {
   display: grid;
   margin-top: auto;
 
-  gap: 17px;
+  gap: 15px;
   grid-template-columns: 1fr auto;
+}
+
+.newsletter-button {
+  padding: 12px 36px;
 }
 
 /* Доставка */
@@ -1363,7 +1385,7 @@ textarea.field {
 
 .delivery-content {
   width: 407px;
-  padding: 20px 0 0 36px;
+  padding: 6px 0 0 36px;
 }
 
 .delivery-title {
@@ -1535,6 +1557,7 @@ textarea.field {
 .contacts-address {
   margin: 0 0 24px;
 
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1546,6 +1569,18 @@ textarea.field {
   line-height: 24px;
   color: inherit;
   text-decoration: none;
+}
+
+.contacts-phone:hover {
+  opacity: 0.5;
+}
+
+.contacts-phone:focus-visible {
+  opacity: 0.5;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
 }
 
 .contacts-tip {
@@ -1574,18 +1609,33 @@ textarea.field {
   display: grid;
   margin: 0 auto;
 
-  gap: 5px 3px;
+  gap: 8px 1px;
   grid-template-columns: repeat(2, auto);
 }
 
 .footer-navigation-link {
   display: inline-block;
-  padding-left: 23px;
+  padding-left: 24px;
 
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
+
+  transition: transform 0.5s;
+}
+
+.footer-navigation-link:hover {
+  opacity: 0.5;
+}
+
+.footer-navigation-link:focus-visible {
+  outline: none;
+  opacity: 0.5;
+}
+
+.footer-navigation-link:active {
+  transform: scale(0.8);
 }
 
 .footer-navigation-link-favorites {
@@ -1601,9 +1651,24 @@ textarea.field {
   display: block;
   width: 93px;
   height: 27px;
-  margin-bottom: 14px;
+  margin: 2px 0 14px 1px;
 
   color: #2d3440;
+
+  transition: transform 0.5s;
+}
+
+.page-footer-copyright-logo:hover {
+  opacity: 0.5;
+}
+
+.page-footer-copyright-logo:focus-visible {
+  outline: none;
+  opacity: 0.5;
+}
+
+.page-footer-copyright-logo:active {
+  transform: scale(0.8);
 }
 
 .page-footer-copyright-logo img {
@@ -1624,12 +1689,27 @@ textarea.field {
   text-decoration: none;
 
   border-bottom: 1px solid rgba(46, 52, 64, 0.5);
+
+  transition: transform 0.5s;
+}
+
+.page-footer-copyright-link:hover {
+  opacity: 0.5;
+}
+
+.page-footer-copyright-link:focus-visible {
+  outline: none;
+  opacity: 0.5;
+}
+
+.page-footer-copyright-link:active {
+  transform: scale(0.8);
 }
 
 /* Хлебные крошки Каталога */
 
 .intro {
-  padding: 32px 0;
+  padding: 32px 0 32px 2px;
 }
 
 .intro-container {
@@ -1710,12 +1790,16 @@ textarea.field {
   font-size: 14px;
 }
 
+.filter-fieldset-fat .filter-form-legend {
+  margin: 0 0 6px 16px;
+}
+
 /* Сортировка */
 
 .filter-select {
   width: 196px;
   height: 36px;
-  padding: 0 32px 0 14px;
+  padding: 0 32px 0 16px;
 
   font-style: normal;
   font-weight: 400;
@@ -1767,7 +1851,7 @@ textarea.field {
 
 .range-input {
   width: 30px;
-  margin: 0 -4px 0 -2px;
+  margin: 0 -3px 0 -3px;
   padding: 0;
 
   font-weight: 400;
@@ -1891,7 +1975,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 8px 24px;
+  padding: 9px 24px;
 
   background-color: rgb(252, 252, 252, 0.3);
   border-radius: 18px;
@@ -2060,9 +2144,9 @@ input[type="number"]::-webkit-inner-spin-button {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 41px 0;
+  padding: 38px 0 40px 0;
 
-  grid-template-columns: 180px 1fr 180px;
+  grid-template-columns: 166px 1fr 180px;
 }
 
 .pagination::before {
@@ -2114,7 +2198,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-wrap: wrap;
   max-width: 200px;
-  margin: 0 8px;
+  margin: 0 5px;
 }
 
 .pagination-link {
@@ -2152,4 +2236,105 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #fcfcfc;
 
   pointer-events: none;
+}
+
+/* Модальное окно */
+
+.modal-window {
+  position: absolute;
+  top: 2879px;
+  right: 35%;
+  z-index: 5;
+
+  display: none;
+  width: 570px;
+  padding: 0;
+
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
+}
+
+.modal-window::backdrop {
+  background-color: #2d3440;
+  opacity: 0.3;
+}
+
+.modal-auth {
+  position: relative;
+
+  padding: 64px 64px 66px 64px;
+}
+
+.modal-title {
+  margin: 0 0 17px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Inter", sans-serif;
+  color: #2d3440;
+}
+
+.button-modal-close {
+  position: absolute;
+  top: 27px;
+  right: 27px;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-modal-close::after,
+.button-modal-close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 12px;
+  height: 1px;
+
+  background-color: #000000;
+  transform: translate(-50%, -50%);
+}
+
+.button-modal-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.button-modal-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.button-modal-close:hover {
+  opacity: 0.6;
+}
+
+.button-modal-close:active {
+  opacity: 0.3;
+}
+
+.modal-form {
+  display: grid;
+  padding-top: 15px;
+
+  gap: 16px;
+  grid-template-rows: 1fr;
+}
+
+.modal-form textarea {
+  height: 149px;
+}
+
+.modal-button {
+  width: 152px;
+  margin-top: 16px;
+  margin-left: auto;
 }
