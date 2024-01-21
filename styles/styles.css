@@ -583,10 +583,14 @@ input[type="password"] {
   line-height: 20px;
   vertical-align: baseline;
   color: #2d3440;
+  -webkit-text-decoration: 1px;
   text-decoration: 1px;
 
+  -webkit-text-decoration-color: inherit;
   text-decoration-color: inherit;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
   text-decoration-style: solid;
   text-underline-offset: 4px;
 }
@@ -1829,6 +1833,7 @@ input[type="password"] {
   border-radius: 20px;
   cursor: pointer;
 
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -1876,6 +1881,7 @@ input[type="password"] {
   background-color: transparent;
   border: none;
 
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
@@ -2022,6 +2028,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 50%;
   cursor: pointer;
 
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -2089,6 +2096,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
   cursor: pointer;
 
+  -webkit-appearance: none;
   appearance: none;
 }
 
