@@ -619,8 +619,20 @@ input[type="password"] {
   padding: 48px 48px 15px;
 }
 
+.basket-content-empty {
+  display: none;
+  width: 288px;
+  height: 156px;
+  padding: 48px 20px 15px;
+}
+
 .basket-title {
   margin: 0 0 32px;
+}
+
+.basket-content-empty .basket-title {
+  line-height: 30px;
+  text-align: center;
 }
 
 .basket-list {
