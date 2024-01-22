@@ -1754,10 +1754,28 @@ input[type="password"] {
   text-decoration: none;
 
   border-bottom: 1px solid transparent;
+
+  transition: transform 0.5s;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.5;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: none;
+  opacity: 0.5;
+}
+
+.breadcrumbs-link:active {
+  transform: scale(0.8);
 }
 
 .breadcrumbs-link-current {
   border-color: currentColor;
+  cursor: default;
+
+  pointer-events: none;
 }
 
 .breadcrumbs-item {
