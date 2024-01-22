@@ -2279,19 +2279,19 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Модальное окно */
 
 .modal-window {
-  position: absolute;
-  top: 2879px;
-  right: 35%;
+  position: fixed;
   z-index: 5;
 
-  display: none;
-  width: 570px;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1366px;
+  height: auto;
 
-  background-color: #fcfcfc;
+  background-color: rgba(45, 52, 64, 0.3);
   border: none;
-  border-radius: 8px;
-  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
+
+  inset: 0;
 }
 
 .modal-window::backdrop {
@@ -2299,10 +2299,20 @@ input[type="number"]::-webkit-inner-spin-button {
   opacity: 0.3;
 }
 
+.modal-window-open {
+  display: none;
+}
+
 .modal-auth {
   position: relative;
 
+  width: 570px;
+  margin: auto;
   padding: 64px 64px 66px 64px;
+
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
 .modal-title {
