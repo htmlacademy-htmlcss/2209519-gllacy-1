@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/styles.css" rel="stylesheet">
+  <link href="favicon.ico" rel="icon">
   <title>Интернет-магазин мороженого "Глейси"</title>
 </head>
 
@@ -35,7 +36,7 @@
 
           <ul class="nav-menu list-reset">
 
-            <li class="nav-item nav-item-catalog dropdown">
+            <li class="nav-item dropdown">
 
               <a class="nav-link nav-link-catalog dropdown-nav-link" href="#">Каталог</a>
 
@@ -47,7 +48,7 @@
                   <ul class="nav-drop-list list-reset">
 
                     <li class="nav-drop-item">
-                      <a class="nav-drop-link nav-drop-link-new-products" href="#">Новинки</a>
+                      <a class="nav-drop-link nav-drop-link-new-products" href="#">Новинки</a><span></span>
                     </li>
 
                     <li class="nav-drop-item">
@@ -100,7 +101,20 @@
               </a>
 
               <!-- Всплывающий блок -->
-              <div class="search dropdown-container"></div>
+              <div class="search dropdown-container">
+
+                <div class="dropdown-wrapper">
+
+                  <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
+
+                    <label class="visually-hidden" for="search">Поиск по сайту.</label>
+                    <input class="search-input input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+
+                  </form>
+
+                </div>
+
+              </div>
 
             </li>
 
@@ -114,7 +128,29 @@
               </a>
 
               <!-- Всплывающий блок -->
-              <div class="login dropdown-container"></div>
+              <div class="login dropdown-container">
+                <h2 class="dropdown-title login-title">Личный кабинет</h2>
+
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+
+                  <label class="visually-hidden" for="email">Введите вашу почту</label>
+                  <input class="login-input input" type="email" id="email" name="email" placeholder="Ваш email" value="email@example.com" required>
+                  <label class="visually-hidden" for="password">Введите ваш пароль</label>
+                  <input class="login-input input" type="password" id="password" name="password" placeholder="Ваш пароль" value="******" required>
+
+                  <div class="login-wrapper">
+
+                    <button class="button button-other login-button" type="submit">Войти</button>
+                    <div class="login-wrapper-links">
+                      <a class="login-link" href="#">Забыли пароль?</a>
+                      <a class="login-link" href="#">Регистрация</a>
+                    </div>
+
+                  </div>
+
+                </form>
+
+              </div>
 
             </li>
 
@@ -129,7 +165,69 @@
               </a>
 
               <!-- Всплывающий блок -->
-              <div class="basket dropdown-container"></div>
+              <div class="basket dropdown-container">
+
+                <div class="basket-content basket-content-full">
+                  <h2 class="basket-title dropdown-title">Корзина</h2>
+
+                  <ul class="basket-list list-reset">
+
+                    <li class="basket-item">
+
+                      <a class="basket-link" href="#">
+
+                        <img src="images/catalog/catalog-item-1.jpg" width="46" height="46" alt="Шарик мороженого цвета малины.">
+
+                        <div class="basket-container">
+                          <h3 class="basket-subtitle">Малинка</h3>
+                          <span class="basket-desc">1&nbsp;кг&nbsp;х&nbsp;310&nbsp;₽</span>
+                        </div>
+
+                      </a>
+
+                      <span class="basket-price">310&nbsp;₽</span>
+
+                      <button class="basket-delete" type="button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+
+                    </li>
+
+                    <li class="basket-item">
+
+                      <a class="basket-link" href="#">
+
+                        <img src="images/catalog/catalog-item-4.jpg" width="46" height="46" alt="Шарик мороженого голубого цвета с разноцветной присыпкой.">
+
+                        <div class="basket-container">
+                          <h3 class="basket-subtitle">Бабл-гам</h3>
+                          <span class="basket-desc">1,5&nbsp;кг&nbsp;х&nbsp;320&nbsp;₽</span>
+                        </div>
+
+                      </a>
+
+                      <span class="basket-price">480&nbsp;₽</span>
+
+                      <button class="basket-delete" type="button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+
+                    </li>
+
+                  </ul>
+
+                  <div class="basket-check">
+                    <a class="button button-other basket-button" href="#">Оформить заказ</a>
+                    <span class="basket-total">Итого:&nbsp;790&nbsp;₽</span>
+                  </div>
+
+                </div>
+
+                <div class="basket-content basket-content-empty">
+                  <h2 class="basket-title dropdown-title">Ваша корзина пока пуста</h2>
+                </div>
+
+              </div>
 
             </li>
 
@@ -163,7 +261,7 @@
 
                 <h2 class="slide-caption">Нежный пломбир с&nbsp;клубничным джемом</h2>
 
-                <p class="slide-description">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&mdash; это идеальный десерт для всей семьи.</p>
+                <p class="slide-description">Натуральное мороженое из&nbsp;свежих сливок и&nbsp;молока с&nbsp;вкуснейшим клубничным джемом&nbsp;&ndash; это идеальный десерт для всей семьи.</p>
 
                 <a class="slide-link button" href="#">Заказать</a>
 
@@ -346,7 +444,7 @@
 
         <div class="catalog-container container">
 
-          <h2 class="catalog-title-common title">Попробуйте самые популярные вкусы <br>нашего мороженого</h2>
+          <h2 class="catalog-title-common title">Попробуйте самые популярные <br>вкусы нашего мороженого</h2>
 
           <!-- Малинка -->
 
@@ -593,8 +691,15 @@
 
                   <label class="order-form-label" for="date">Дата</label>
 
+                  <!-- Кнопка и подсказка -->
                   <div class="order-tooltip">
-                    <!-- Здесь будет кнопка и подсказка -->
+
+                    <button class="order-tooltip-toggle" type="button" aria-labelledby="info-label-date">
+                      <span class="visually-hidden">Дополнительная информация.</span>
+                    </button>
+
+                    <p class="order-tooltip-text" id="info-label-date">Введите дату доставки</p>
+
                   </div>
 
                 </div>
@@ -620,8 +725,15 @@
 
                   <label class="order-form-label" for="address">Адрес</label>
 
+                  <!-- Кнопка и подсказка -->
                   <div class="order-tooltip">
-                    <!-- Здесь будет кнопка и подсказка -->
+
+                    <button class="order-tooltip-toggle" type="button" aria-labelledby="info-label-address">
+                      <span class="visually-hidden">Дополнительная информация.</span>
+                    </button>
+
+                    <p class="order-tooltip-text" id="info-label-address">Введите адрес доставки</p>
+
                   </div>
 
                 </div>
@@ -755,6 +867,36 @@
     </footer>
 
     <!-- Модальное окно -->
+
+    <dialog class="modal-window modal-window-open">
+
+      <div class="modal-auth">
+
+        <button class="button-modal-close" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+
+            <label class="visually-hidden" for="modal-form-name">Имя и фамилия.</label>
+            <input class="form-input field" type="text" id="modal-form-name" name="form-name" placeholder="Имя и фамилия" required>
+
+            <label class="visually-hidden" for="modal-form-email">Телефон.</label>
+            <input class="form-input field" type="email" id="modal-form-email" name="form-email" placeholder="email@example.com" required>
+
+            <textarea class="form-input field" name="message" placeholder="В свободной форме"></textarea>
+            <button class="modal-button button button-other" type="submit">Отправить</button>
+
+          </form>
+
+        </section>
+
+      </div>
+
+    </dialog>
 
   </div>
 
