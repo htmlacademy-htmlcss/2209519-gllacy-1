@@ -1452,8 +1452,13 @@ input[type="password"] {
   gap: 9px;
 }
 
+.order-form-item-date {
+  grid-column: 1/2;
+}
+
 .order-form-item-tel {
-  grid-column: span 1 / -1;
+  grid-column: 2/-1;
+  grid-row: 1/2;
 }
 
 .order-form-item-address {
