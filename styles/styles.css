@@ -323,7 +323,7 @@ textarea.field {
   border-radius: 30px;
 }
 
-li:nth-child(2) .nav-link {
+li.nav-item:nth-child(2) .nav-link {
   padding: 6px 13px;
 }
 
