@@ -323,7 +323,7 @@ textarea.field {
   border-radius: 30px;
 }
 
-li:nth-child(2) .nav-link {
+li.nav-item:nth-child(2) .nav-link {
   padding: 6px 13px;
 }
 
@@ -1005,6 +1005,11 @@ input[type="password"] {
   gap: 16px;
 }
 
+.page-footer-container .social-list {
+  justify-content: start;
+  max-width: 104px;
+}
+
 .social-link {
   display: flex;
   justify-content: center;
@@ -1450,6 +1455,15 @@ input[type="password"] {
   border: none;
 
   gap: 9px;
+}
+
+.order-form-item-date {
+  grid-column: 1/2;
+}
+
+.order-form-item-tel {
+  grid-column: 2/-1;
+  grid-row: 1/2;
 }
 
 .order-form-item-address {
