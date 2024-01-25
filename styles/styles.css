@@ -1005,6 +1005,11 @@ input[type="password"] {
   gap: 16px;
 }
 
+.page-footer-container .social-list {
+  justify-content: start;
+  max-width: 104px;
+}
+
 .social-link {
   display: flex;
   justify-content: center;
