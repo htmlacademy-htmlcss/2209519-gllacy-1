@@ -323,10 +323,6 @@ textarea.field {
   border-radius: 30px;
 }
 
-li.nav-item:nth-child(2) .nav-link {
-  padding: 6px 13px;
-}
-
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -345,7 +341,7 @@ li.nav-item:nth-child(2) .nav-link {
 .nav-link-catalog {
   position: relative;
 
-  padding-right: 39px;
+  padding-right: 38px;
 
   background-color: transparent;
   background-image: url("../images/icons/arrow-down.svg");
