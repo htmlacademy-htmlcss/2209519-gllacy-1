@@ -2009,8 +2009,8 @@ textarea.field {
   right: -16px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
   margin: 0;
 
   -webkit-appearance: none;
