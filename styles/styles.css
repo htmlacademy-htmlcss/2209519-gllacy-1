@@ -556,7 +556,7 @@ textarea.field {
   outline: 1px solid #b9b9b9;
 }
 
-input[type="password"] {
+.login-input[type="password"] {
   padding: 13px 88px 14px 11px;
 }
 
