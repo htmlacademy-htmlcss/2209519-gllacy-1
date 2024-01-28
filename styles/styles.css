@@ -220,7 +220,7 @@ img {
   box-shadow: 0 0 0 1px #2d3440;
 }
 
-textarea.field {
+.field-textarea {
   resize: none;
 }
 
@@ -323,10 +323,6 @@ textarea.field {
   border-radius: 30px;
 }
 
-li.nav-item:nth-child(2) .nav-link {
-  padding: 6px 13px;
-}
-
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -345,7 +341,7 @@ li.nav-item:nth-child(2) .nav-link {
 .nav-link-catalog {
   position: relative;
 
-  padding-right: 39px;
+  padding-right: 38px;
 
   background-color: transparent;
   background-image: url("../images/icons/arrow-down.svg");
@@ -560,7 +556,7 @@ li.nav-item:nth-child(2) .nav-link {
   outline: 1px solid #b9b9b9;
 }
 
-input[type="password"] {
+.login-input[type="password"] {
   padding: 13px 88px 14px 11px;
 }
 
@@ -1443,7 +1439,7 @@ input[type="password"] {
   display: grid;
 
   gap: 20px 16px;
-  grid-template-columns: 117px 1fr;
+  grid-template-columns: 117px 1fr 1fr;
 }
 
 .order-form-item {
@@ -1457,13 +1453,8 @@ input[type="password"] {
   gap: 9px;
 }
 
-.order-form-item-date {
-  grid-column: 1/2;
-}
-
 .order-form-item-tel {
-  grid-column: 2/-1;
-  grid-row: 1/2;
+  grid-column: auto / span 2;
 }
 
 .order-form-item-address {
@@ -2013,8 +2004,8 @@ input[type="password"] {
   right: -16px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
   margin: 0;
 
   -webkit-appearance: none;
@@ -2393,8 +2384,10 @@ input[type="number"]::-webkit-inner-spin-button {
   grid-template-rows: 1fr;
 }
 
-.modal-form textarea {
+.modal-textarea {
   height: 149px;
+
+  resize: none;
 }
 
 .modal-button {
