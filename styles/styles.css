@@ -1439,7 +1439,7 @@ img {
   display: grid;
 
   gap: 20px 16px;
-  grid-template-columns: 117px 1fr;
+  grid-template-columns: 117px 1fr 1fr;
 }
 
 .order-form-item {
@@ -1453,13 +1453,8 @@ img {
   gap: 9px;
 }
 
-.order-form-item-date {
-  grid-column: 1/2;
-}
-
 .order-form-item-tel {
-  grid-column: 2/-1;
-  grid-row: 1/2;
+  grid-column: auto / span 2;
 }
 
 .order-form-item-address {
